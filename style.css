@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
+/* Notes
+
+==== Fixed ====
+- Layout is usually built for only one view
+- Units are usually hard coded and not responsive
+- Cheapest and fastest to get into production
+- Not industry standard
+
+==== Fluid ====
+- Site has no constraints (no max-width)
+- Usually media queries are not used in favor of a layout that is elastic in all devices
+- Not commonly seen anymore, used to be popular
+
+==== Adaptive ====
+- Website adjusts to breakpoint (media queries)
+- Layout may still be hard coded widths
+- Will still see this approach in many sites to this day 
+
+==== Responsive ====
+- Uses both breakpoints and responsive units
+- A blend of all the positive traits of fixed, fluid, and adaptive
+- Industry standard
+
+*/
+
 * {
   box-sizing: border-box;
 }
