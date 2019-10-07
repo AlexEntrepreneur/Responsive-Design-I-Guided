@@ -68,8 +68,21 @@ header {
   align-items: center;
 }
 
+@media (max-width: 515px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 header h1 {
   font-size: 20px;
+}
+
+@media (max-width: 515px) {
+  header h1 {
+    margin-bottom: 20px;
+  }
 }
 
 header nav a {
@@ -109,6 +122,17 @@ button {
   vertical-align: top;
 }
 
+@media(max-width: 515px) {
+  .main-content {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .main-content section {
+    width: 90%;
+  }
+}
+
 .main-content section:nth-of-type(odd) {
  margin-left: 0;
 }
@@ -120,6 +144,13 @@ button {
 .main-footer {
   width: 40%;
   margin-bottom: 40px;
+}
+
+@media (max-width: 515px) {
+  .main-footer {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
 }
 
 .main-footer nav {
