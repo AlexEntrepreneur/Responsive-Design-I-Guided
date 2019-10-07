@@ -118,7 +118,7 @@ button {
   .book-flight-btn {
     width: 90%;
     height: 50px;
-    font: 25px;
+    font-size: 25px;
     margin: 0 auto 30px auto;
   }
 }
@@ -127,6 +127,32 @@ button {
   .book-flight-btn {
     background-color: royalblue;
     border: 3px solid black;
+  }
+}
+
+/* Mobile-first approach */
+.book-flight-btn-mobile {
+  display: block;
+  background-color: #FFBF27;
+  width: 90%;
+  height: 50px;
+  font-size: 25px;
+}
+
+@media (min-width: 515px) {
+  .book-flight-btn-mobile {
+    max-width: 200px;
+    font-size: inherit;
+    margin: unset;
+    height: unset;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 600px) {
+  .book-flight-btn-mobile {
+    background-color: royalblue;
+    border: 5px solid black;
   }
 }
 
