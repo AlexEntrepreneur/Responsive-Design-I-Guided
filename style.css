@@ -47,7 +47,7 @@ p {
 }
 
 .container {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -93,6 +93,10 @@ button {
   margin-bottom: 30px;
   background-color: royalblue;
   color: white;
+}
+
+.book-flight-btn {
+  min-width: 150px;
 }
 
 .main-content {
